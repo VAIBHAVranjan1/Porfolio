@@ -63,9 +63,9 @@ const Contact = () => {
                 <Phone className="w-6 h-6" />
                 +91 9310558007
               </li>
-              <li className="flex items-center gap-3">
-                <Mail className="w-6 h-6" />
-                vaibhavranjan420@gmail.com
+              <li className="flex items-start gap-3">
+                <Mail className="w-6 h-6 flex-shrink-0 mt-1" />
+                <span className="break-all">vaibhavranjan420@gmail.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <MapPin className="w-6 h-6" />
