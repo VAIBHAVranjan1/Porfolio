@@ -15,12 +15,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "Blogify - Full-Stack Blog CRUD Application",
-    description: "A full-stack blog app with rich text editing, user authentication, and CRUD functionality. Built with React, Node.js, Express, and MySQL.",
+    title: "YC Directory – Startup Pitch Platform",
+    description: "YC Directory is a Next.js web app where entrepreneurs can pitch their startup ideas, explore submissions, and connect with others. It features authentication, content management via Sanity CMS, and a clean UI powered by Tailwind CSS.",
     image: "/Projects/project2.png",
-    techStack: ["React Quill", "Moment.js", "Vite", "cookie-parser", "cors", "dotenv", "jsonwebtoken", "bcrypt", "nodemon"],
-    GitHub: "https://github.com/VAIBHAVranjan1/Full-stack-work",
-    demoUrl: "https://youtu.be/xpVWsvXourE",
+    techStack: ["Sanity", "Next.js", "TypeScript", "TailwindCSS", "lucid-reacts", "NextAuth.js", "uiw/react-md-editor"],
+    GitHub: "https://github.com/VAIBHAVranjan1/NEXT-PROJECT",
+    demoUrl: "https://next-project-nine-theta.vercel.app/",
   },
   {
     id: 3,
