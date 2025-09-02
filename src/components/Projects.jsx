@@ -16,7 +16,7 @@ const projects = [
   {
     id: 2,
     title: "YC Directory – Startup Pitch Platform",
-    description: "YC Directory is a Next.js web app where entrepreneurs can pitch their startup ideas, explore submissions, and connect with others. It features authentication, content management via Sanity CMS, and a clean UI powered by Tailwind CSS.",
+    description: "A Next.js web app where entrepreneurs can pitch and explore startup ideas, with authentication, content management via Sanity CMS, and a clean Tailwind CSS interface.",
     image: "/Projects/project2.png",
     techStack: ["Sanity", "Next.js", "TypeScript", "TailwindCSS", "lucid-reacts", "NextAuth.js", "uiw/react-md-editor"],
     GitHub: "https://github.com/VAIBHAVranjan1/NEXT-PROJECT",
