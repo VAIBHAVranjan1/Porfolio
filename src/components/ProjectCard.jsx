@@ -7,12 +7,12 @@ const ProjectCard = ({ project }) => {
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: project.id * 0.1 }}
-      viewport={{ once: true }}
+      transition={{ duration: 0.5 }} // Removed the index delay here
+      viewport={{ once: true, amount: 0.1 }}
       whileHover={{ scale: 1.02 }}
-      className="group bg-card rounded-xl overflow-hidden shadow-lg border border-gray-500 transition-all"
+      className="group bg-card rounded-xl overflow-hidden shadow-lg border border-gray-500 transition-all h-full flex flex-col" // Added h-full and flex column
     >
-      <div className="h-52 overflow-hidden">
+      <div className="h-52 overflow-hidden flex-shrink-0">
         <img
           src={project.image}
           alt={project.title}
@@ -26,7 +26,7 @@ const ProjectCard = ({ project }) => {
           {project.description}
         </p>
 
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2 mb-4 mt-auto">
           {project.techStack.map((tech, idx) => (
             <span
               key={idx}
@@ -37,23 +37,25 @@ const ProjectCard = ({ project }) => {
           ))}
         </div>
 
-        <div className="flex justify-between items-center mt-auto pt-2 z-20">
+        <div className="flex justify-between items-center pt-2 z-20">
           <div className="flex space-x-4">
-            <a
-              href={project.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-foreground/80 hover:text-primary transition-colors"
-            >
-              <ExternalLink size={30}/>
-            </a>
+            {project.demoUrl && (
+              <a
+                href={project.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground/80 hover:text-primary transition-colors"
+              >
+                <ExternalLink size={24}/>
+              </a>
+            )}
             <a
               href={project.GitHub}
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground/80 hover:text-primary transition-colors"
             >
-              <Github size={30}/>
+              <Github size={24}/>
             </a>
           </div>
         </div>
