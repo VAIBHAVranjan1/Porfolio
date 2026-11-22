@@ -80,7 +80,7 @@ const SkillsSection = () => {
     className="w-full md:w-1/2"
   >
     <img
-      src={`https://leetcard.jacoblin.cool/NishantKumar5?theme=${theme}`}
+      src={`https://leetcard.jacoblin.cool/vaibhavRANJAN9?theme=${theme}`}
       alt="LeetCode Stats"
       className="rounded-lg shadow-md w-full hover:scale-105 transition-transform duration-300"
     />
