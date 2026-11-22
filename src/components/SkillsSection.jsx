@@ -74,7 +74,7 @@ const SkillsSection = () => {
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
   {/* LeetCode Stats */}
   <a
-    href="https://leetcode.com/NishantKumar5"
+    href="https://leetcode.com/vaibhavRANJAN9"
     target="_blank"
     rel="noopener noreferrer"
     className="w-full md:w-1/2"
